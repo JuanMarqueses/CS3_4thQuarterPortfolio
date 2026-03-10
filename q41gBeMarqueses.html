@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie sheeesh</title>
+    <link rel="stylesheet" href="stylemovie.css"> 
+    <script defer src="movie.js"></script>
+    <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.6tvJxZczvSRVQqZ490mzDgHaK_?w=136&h=201&c=7&r=0&o=7&pid=1.7&rm=3">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Add a Movie</h2>
+
+<label>Title:</label>
+<input type="text" id="title">
+
+<label>Year:</label>
+<input type="number" id="year">
+
+<label>Genre:</label>
+<select id="genre">
+<option>ACTION</option>
+<option>COMEDY</option>
+<option>DRAMA</option>
+<option>HORROR</option>
+<option>ROMANCE</option>
+<option>SCI-FI</option>
+</select>
+
+<label>Rating:</label>
+<div class="stars" id="stars">
+<span data-value="1">★</span>
+<span data-value="2">★</span>
+<span data-value="3">★</span>
+<span data-value="4">★</span>
+<span data-value="5">★</span>
+</div>
+
+<br><br>
+
+<button onclick="addMovie()">Add Movie</button>
+
+<h3 style="text-align:center">Movie List</h3>
+<div id="movieList"></div>
+
+</div>
